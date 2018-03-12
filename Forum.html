@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+a:link {
+    color: gold;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+header {
+    padding-top: 2%;
+    color: gold;
+    background-color: maroon;
+    clear: left;
+    text-align: left;   
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+section {
+    margin-left: 70px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.pagination {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: maroon;
+    color: gold;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+footer  {
+	text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Forum</h1>
+    <a href="#">Sign In</a>
+    <a href="#">Contact Support</a>
+   
+   <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Search</button>
+      <button type="submit2">Ask Question</button>
+    </form>
+    <hr>
+  </div>
+</header>
+
+
+<nav>
+<h4>Search By</h4>
+<form action="/action_page">
+  <input type="radio" name="searchBy" value="relevance" checked>Relevance<br>
+  <input type="radio" name="searchBy" value="mostPop">Most Popular<br>
+  <input type="radio" name="searchBy" value="date">Date<br><br>
+</form> 
+
+<h4>Show</h4>
+<form action="/action_page">
+  <input type="radio" name="show" value="allContent" checked>All Content<br>
+  <input type="radio" name="show" value="unanswered">Unanswered<br>
+  <input type="radio" name="show" value="tips">Tips<br><br>
+</form>
+
+<h4>Last Modified</h4>
+<form action="/action_page">
+  <input type="radio" name="lastMod" value="allTime" checked>All Time<br>
+  <input type="radio" name="lastMod" value="year" checked>One Year<br>
+  <input type="radio" name="lastMod" value="month" checked>One Month<br>
+  <input type="radio" name="lastMod" value="week" checked>One Week<br>
+  <input type="radio" name="lastMod" value="24hours">24 Hours<br><br>
+</form>
+
+</nav>
+
+<section>
+  <h1>Wi-Fi Results</h1>
+  
+  <h4>Connecting to wifi?</h4>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+  </p>
+  <hr>
+  
+  <h4>Unable to connect to wifi</h4>
+  <p>Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+  </p>
+  <hr>
+  
+  <h4>Wifi not working</h4>
+  <p>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+  </p>
+  <hr>
+  
+  <h4>Laptop wifi not working</h4>
+  <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+  </p>
+  <hr>
+  
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">&raquo;</a>
+</div>
+<br>
+</section>
+
+
+</div>
+
+</body>
+</html>
+
