@@ -1,0 +1,158 @@
+<!--Homepage by Danielle Kirincich-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: White;
+}
+
+h1 {
+    color: Maroon;
+    text-shadow: -1px 0 Gold, 0 1px Gold, 1px 0 Gold, 0 -1px Gold; /* Stack Overflow */
+    text-align: center;
+}
+
+/* search bar code help from W3 */
+.topnav {
+    overflow: hidden;
+    background-color: #e9e9e9; /* light gray bacground of menu bar */
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    background-color: #696969; /* DimGrey to signify which page user is on */
+    color: white; /*text is white on active page in menu bar */
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically
+instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px; /* intro paragraph */
+}
+
+#nav {
+    float:center;
+    font-size: 20;
+    width:200px;
+    display:inline;
+    text-align:center;
+}
+#footer ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+#footer li {
+    display:inline-block;
+    font-size: 20px;
+    text-align:center;
+    line-height:32px;
+    text-indent:10px;
+    width:50%;
+}
+#footer li.maroon a {
+    color:#42454f; /* white text when user hovers over categories */
+    text-decoration:none;
+    display:block;
+
+}
+#footer li.maroon a:hover, #footer ul li.maroon a:hover {
+    color:#FFFFFF; /* white text when user hovers */
+    text-decoration:none;
+    background-color:#800000; /* maroon bars when user hovers */
+}
+
+</style>
+</head>
+<body>
+
+<h1>Loyola Community Tech Support</h1>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#signin">Sign In</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+<p>Welcome to Loyola Community Tech Support! This is a place where students
+can help each other out in a quick, casual manner with technology-related
+issues. Use the forums to communicate with your peers about Loyola websites,
+Wi-Fi connection, external websites students use for classes, and more! Choose
+from the following categories:</p>
+
+<div id="footer">
+    <div id="nav">
+        <ul>
+            <li class="maroon"><a href="#">Loyola Websites</a>
+
+            </li>
+            <li class="maroon"><a href="#">External Websites and Software</a>
+
+            </li>
+            <li class="maroon"><a href="#">Loyola's Wi-Fi</a>
+
+            </li>
+            <li class="maroon"><a href="#">How to Work Loyola's Computers and Projectors</a>
+
+            </li>
+            <li class="maroon"><a href="#">Questions Based on a Specific Course</a>
+
+            </li>
+            <li class="maroon"><a href="#">View Most Recent Questions</a>
+
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--JS Fiddle Example for forum categories-->
+
+<!--img src="loyolalogo.jpg" alt="Loyola Logo" width="130" height="150"-->
+
+</body>
+</html>
